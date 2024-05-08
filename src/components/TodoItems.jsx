@@ -1,13 +1,14 @@
 import TodoItem from "./TodoItem";
 
-export default function TodoItems({ todoItemsData, todoList, setTodoList }) {
+export default function TodoItems({ todoList, setTodoList }) {
   // console.log("todos", todoItemsData);
-  const todoItems = todoItemsData.map((item) => {
+  let todoItemsData = todoList;
+  const todoItems = todoItemsData.map((item, i) => {
     return (
       <TodoItem
         date={item.date}
         name={item.name}
-        key={item.id}
+        key={i}
         todoList={todoList}
         setTodoList={setTodoList}
       />

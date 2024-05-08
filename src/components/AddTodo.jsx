@@ -9,7 +9,7 @@ function AddTodo({ setTodoList, todoList }) {
     // console.log(`button click event`, event);
     // console.log(`items value`, item);
     let newTodoList = [...todoList, item];
-    console.log(newTodoList);
+    // console.log(newTodoList);
     setTodoList(newTodoList);
   }
 

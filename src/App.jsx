@@ -15,11 +15,7 @@ function App() {
       <AppName />
       <AddTodo setTodoList={setTodoList} todoList={todoList} />
       {todoList.length !== 0 ? (
-        <TodoItems
-          todoItemsData={todoList}
-          todoList={todoList}
-          setTodoList={setTodoList}
-        />
+        <TodoItems todoList={todoList} setTodoList={setTodoList} />
       ) : null}
       {/*  */}
     </>
